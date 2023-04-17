@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Run 7 days to die') {
             steps {
-                bat 'D:\\Steam\\steamapps\\common\\7 Days To Die\\7dLauncher.exe'
+                bat '"D:\\Steam\\steamapps\\common\\7 Days To Die\\7dLauncher.exe"'
             }
         }
     }
