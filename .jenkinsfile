@@ -1,10 +1,9 @@
 pipeline {
     agent any
-    
     stages {
-        stage('Run 7 days to die') {
+        stage('Run some exe') {
             steps {
-                bat '"D:\\Steam\\steamapps\\common\\7 Days To Die\\7dLauncher.exe"'
+                bat 'D:\\Steam\\steamapps\\common\\Terraria\\Terraria.exe'
             }
         }
     }
