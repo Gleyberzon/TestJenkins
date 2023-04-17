@@ -1,9 +1,12 @@
 pipeline {
     agent any
+    enviroment{
+        NEW_VERSION='1.31.25'
+    }
     stages {
         stage('Start') {
             steps {
-                echo "Started"
+                echo "new version is ${NEW_VERSION}"
             }
         }
         stage('Middle') {
@@ -14,14 +17,6 @@ pipeline {
         stage('Finish') {
             steps {
                 echo "Finished"
-            }
-        }
-        post{
-            always{
-                echo "Post"
-            }
-            failure{
-                echo "Fail"
             }
         }
     }
