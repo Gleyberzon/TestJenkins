@@ -12,7 +12,7 @@ pipeline {
         stage('Middle') {
             steps {
                 echo "We are on the middle"
-                cd 'D:\\Games\\Contraband-Police\\Contraband Police v08.03.2023'
+                sh 'cd D:\\Games\\Contraband-Police\\Contraband Police v08.03.2023'
             }
         }
         stage('Finish') {
