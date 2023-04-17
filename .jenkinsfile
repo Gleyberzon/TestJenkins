@@ -1,10 +1,14 @@
 pipeline {
     agent any
-
+    
+    triggers {
+        cron('34 12 * * *')
+    }
+    
     stages {
-        stage('Hello') {
+        stage('Run 7 days to die') {
             steps {
-                echo 'Hello World'
+                bat 'D:\\Games\\Contraband-Police\\Contraband Police v08.03.2023\\ContrabandPolice.exe'
             }
         }
     }
