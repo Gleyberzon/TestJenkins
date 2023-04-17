@@ -1,14 +1,10 @@
 pipeline {
     agent any
     
-    triggers {
-        cron('34 12 * * *')
-    }
-    
     stages {
         stage('Run 7 days to die') {
             steps {
-                bat 'D:\\Games\\Contraband-Police\\Contraband Police v08.03.2023\\ContrabandPolice.exe'
+                bat 'D:\\Steam\\steamapps\\common\\7 Days To Die\\7dLauncher.exe'
             }
         }
     }
