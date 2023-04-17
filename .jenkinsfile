@@ -17,7 +17,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                bat 'ContrabandPolice.exe'
+                bat 'start ContrabandPolice.exe'
             }
         }
     }
