@@ -9,15 +9,15 @@ pipeline {
                 echo "new version is ${NEW_VERSION}"
             }
         }
-        stage('Middle') {
+        stage('Go to folder') {
             steps {
                 echo "We are on the middle"
                 bat 'cd D:\\Games\\Contraband-Police\\Contraband Police v08.03.2023'
             }
         }
-        stage('Finish') {
+        stage('Run') {
             steps {
-                echo "Finished"
+                bat 'ContrabandPolice.exe'
             }
         }
     }
