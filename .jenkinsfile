@@ -1,9 +1,19 @@
 pipeline {
     agent any
     stages {
-        stage('Run some exe') {
+        stage('Start') {
             steps {
-                bat 'D:\\Steam\\steamapps\\common\\Terraria\\Terraria.exe'
+                echo "Started"
+            }
+        }
+        stage('Middle') {
+            steps {
+                echo "We are on the middle"
+            }
+        }
+        stage('Finish') {
+            steps {
+                echo "Finished"
             }
         }
     }
